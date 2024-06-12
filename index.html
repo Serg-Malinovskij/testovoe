@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Заголовок</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header class="header">
+
+    </header>
+
+    <main>
+
+        <!-- первая секция -->
+
+        <section class="main-block">
+            <div class="main-block__container">
+                <div class="main-block__body">
+                    <div class="main-block__content main-content">
+                        <h1 class="main-content__title">Демо-версия</h1>
+                        <div class="main-content__text">За 18 лет деятельности было реализовано более 500 крупных, а так же, не менее 2500 средних и малых проектов. Используя знания и накопленный опыт мы можем предложить</div>
+                        <button class="main-content__btn">Попробовать бесплатно</button>
+                    </div>
+                    <div class="main-block__image"><img src="img/main_image.png" alt="main-image"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <!-- popup -->
+
+    <div id="popup" class="popup" style="display: none;">
+        <div class="popup__body">
+
+            <div class="popup__content">
+
+                <h3 class="popup__title">Войти в систему"</h3>
+                <form method="POST" action="#" class="popup__form form-popup">
+
+                    <div class="form-popup__item">
+                        <input class="form-popup__input" name="email" required placeholder="Email/Телефон" type="text">
+                    </div>
+                    <div class="form-popup__item">
+                        <input class="form-popup__input" name="password" required placeholder="пароль" type="password">
+                    </div>
+                    <div class="form-popup__item form-popup__item--check">
+                        <input class="form-popup__input" id="check" name="check" required type="checkbox">
+                        <label for="check">Запомнить пароль</label>
+                    </div>
+
+                    <div class="form-popup__item">
+                        <button class="form-popup__link-restore">Восстановить</button>
+                    </div>
+                    <div class="form-popup__item">
+                        <button class="form-popup__btn form-popup__btn--blue" type="submit">Войти</button>
+                        <button class="form-popup__btn">Зарегистрироваться</button>
+                    </div>
+                </form>
+                <button id="popup-close" class="close-popup">Закрыть</button>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+
+    </footer>
+
+    <script src="js/inputmask.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
