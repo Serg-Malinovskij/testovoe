@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body class="_lock">
+<body>
     <div class="wrapper">
         <header class="header"></header>
 
@@ -24,7 +24,7 @@
                             <div class="main-content__text">За 18 лет деятельности было реализовано более 500 крупных, а
                                 так же, не менее 2500 средних и малых проектов. Используя знания и накопленный опыт мы
                                 можем предложить</div>
-                            <button class="main-content__btn">Попробовать бесплатно</button>
+                            <button id="popuptrigger" class="main-content__btn">Попробовать бесплатно</button>
                         </div>
                         <div class="main-block__image">
                             <picture>
@@ -43,9 +43,9 @@
 
         <!-- popup -->
 
-        <div id="popup" class="popup" ">
+        <div id="popup" class="popup" style="display: none;">
         <div class=" popup__body">
-            <button id="popup-close" class="close-popup"></button>
+            <button id="popupclose" class="close-popup"></button>
 
             <h3 class="popup__title">Войти в систему</h3>
             <form method="POST" action="#" class="popup__form form-popup">
